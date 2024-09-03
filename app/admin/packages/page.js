@@ -24,7 +24,16 @@ export default function Packages () {
 
     return (
         <section className="pt-[68px] grid grid-cols-3 gap-6 px-8">
-            {packages}
+            <article className="col-span-2 border border-gray-500 rounded-md p-6">
+            <h2 className="text-3xl text-gray-800 mb-6">Recent Packages</h2>
+            {packages.map (item => <AdminPackageCard 
+            senderName={item.data.sender} 
+            timestamp={item.data.timestamp}
+            origin={item.data.origin}
+            dest={item.data.dest}
+            title={item.data.title}
+            />)}
+            </article>
             <aside className="bg-gray-800 rounded-md">
 
             </aside>

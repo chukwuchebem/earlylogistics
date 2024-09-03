@@ -11,5 +11,5 @@ export function AppWrapper({children}) {
         {subRoute == "admin" ? <AdminNav/> : null}
         {children}
         </>
-    }
-)
+    )
+};

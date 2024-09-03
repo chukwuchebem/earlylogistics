@@ -2,10 +2,9 @@
 
 export function AdminPackageCard ({senderName,timestamp,title,origin,dest}) {
    return(
-    <article className="col-span-2 border border-gray-500 rounded-md p-6">
-                <h2 className="text-3xl text-gray-800 mb-6">Recent Packages</h2>
+    
 
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-6 border border-gray-400 p-4 rounded-md cursor-pointer mb-4">
                     <p className="col-span-2">
                         <span className="text-md text-gray-800">Johnson Wale</span>
                         <span  className="text-md text-gray-600">Create</span>
@@ -23,6 +22,5 @@ export function AdminPackageCard ({senderName,timestamp,title,origin,dest}) {
                         </p>
                     </blockquote>
                 </div>
-            </article>
    ) 
 }
