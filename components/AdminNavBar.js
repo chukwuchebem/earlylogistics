@@ -12,7 +12,7 @@ export default function AdminNav() {
 
             <div className="text-rigth">
                 <Link href="/admin/profile">
-                    <Image className="rounded-full " width={48} height={48} src="/sample_user.jpg" alt="profile image"/>
+                    <Image className="rounded-full " width={48} height={48} src="/sample_user.PNG" alt="profile image"/>
                 </Link>
             </div>
         </nav>
