@@ -1,4 +1,4 @@
-
+import { timestampToDate } from "@/utils/timestamp_to_date"
 
 export function AdminPackageCard ({senderName,timestamp,title,origin,dest}) {
    return(
@@ -7,7 +7,7 @@ export function AdminPackageCard ({senderName,timestamp,title,origin,dest}) {
                 <div className="grid grid-cols-3 gap-6 border border-gray-400 p-4 rounded-md cursor-pointer mb-4">
                     <p className="col-span-2">
                         <span className="text-md text-gray-800">Johnson Wale</span>
-                        <span  className="text-md text-gray-600">Create</span>
+                        <span  className="text-md text-gray-600">Created at {timestampToDate(timestamp)}</span>
                         <span className="text-md text-gray-800">{title}</span>
                     </p>
 
